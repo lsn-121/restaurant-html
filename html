@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #header-img {
+      width: 100%;
+      max-width: 1880px;
+      height: 400px;
+
+    }
+     
+    .img-food {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESTAURANT ूाीू </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img id="header-img" src="https://www.snegir86.ru/uploads/news/large/9265b223467fc5c659678b5fda8a4334_877_402.jpeg" alt="лого нересторана">
+    <h1>RESTAURANT ूाीू </h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#order-form">Форма заказа</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="menu">
+      <h2>Menu</h2>
+      <article>
+        <img class="img-food" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64R-m4DdG7ZTfla62LkNUA8ZH9iH2I390M-ncBN7wRIUd2WV8PGV_xb3za2YGxReK_o2RCz1IxJvIdiXfRyi5r4WLPCAVqVIOmdmGqeVn&s=10" alt="Паста">
+        <br>
+        <h3>Паста Карбонара</h3>
+        <p>Паста карбона́ра — спагетти с мелкими кусочками гуанчиале или панчетты,<br> смешанные с соусом из яиц, сыра пекорино романо,<br> соли и свежемолотого чёрного перца. <br>Этот соус доходит до полной готовности от тепла только что сваренной пасты.<br> Блюдо было изобретено в середине XX века<br><i>677рублс</i></p>
+      </article>
+      <article>
+        <img class="img-food" src="https://images.gastronom.ru/I7TqKYJd-1sKLLhktnH52V9Z5hiGn2Bk7SlqJ-CqB2I/pr:article-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzLzY2MzVhZDI5LTliY2EtNDhmZi05M2EwLTI3YzE2ODdhMWY3NS5qcGc.webp" alt="Борщ">
+        <br>
+        <h3>Борщ</h3>
+        <p>Борщ — это традиционный восточнославянский горячий суп на мясном<br> или овощном бульоне, главным ingredиентом которого является свекла,<br> придающая ему характерный насыщенный красный цвет и<br> уникальный вкус. В его состав также традиционно входят капуста,<br> картофель, морковь, лук и мясо.<br><i>322рублс</i></p>
+      </article>
+      <article>
+        <img class="img-food" src="https://icdn.lenta.ru/images/2025/05/07/16/20250507165107233/detail_86209d8b047726b7a9c9a0d9768cbcf6.jpg" alt="Том ям">
+        <br>
+        <h3>Том ям</h3>
+        <p>Том ям — кисло-острый суп с креветками, курицей, рыбой<br> или другими морепродуктами. Национальное блюдо Лаоса и Таиланда. <br><i>322рублс</i></p>
+      </article>
+    </section>
+    <section id="order-form">
+      <h2>Place Your Order</h2>
+      <form>
+        <label for="pasta-qty">Порций Пасты:</label>
+        <input type="number" id="pasta-qty" name="pasta_quantity" min="0" value="0"><br>
+        
+        <label for="borsch-qty">Порций Борща:</label>
+        <input type="number" id="borsch-qty" name="borsch_quantity" min="0" value="0"><br>
+        
+        <label for="tomyam-qty">Порций Том Яма:</label>
+        <input type="number" id="tomyam-qty" name="tom_yum_quantity" min="0" value="0"><br>
+
+        <input type="checkbox" id="cheese" name="addons" value="cheese">
+        <label for="cheese">Двойной сыр</label><br>
+        
+        <input type="checkbox" id="mushrooms" name="addons" value="mushrooms">
+        <label for="mushrooms">Грибы</label><br>
+
+        <label for="requests">Специальные запросы:</label><br>
+        <textarea id="requests" name="special_requests" rows="4" cols="40" placeholder="Type here"></textarea><br>
+        
+        <input type="submit" value="Go To Checkout">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Made with love by q-cold0</p>
+  </footer>
+</body>
+</html>
