@@ -76,6 +76,13 @@ article h3 {
     margin-bottom: 10px;
     color: cornflowerblue;
 }
+section h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: cornflowerblue;
+}
 article b {
     font-size: 20px;
     color: red;
