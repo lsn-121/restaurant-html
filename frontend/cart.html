@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Корзина</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<header>
+		<h1>Корзина</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="cart.html">Корзина</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<hr>
+
+	<main>
+		<article class="product" data-id="1" data-price="2990">
+			<img src="https://rst-basket-cdn-06.geobasket.ru/vol7569/part756990/756990340/images/big/1.webp" alt="Наушники">
+			<div class="product-info">
+				<p>Наушники — <b>2990$</b></p>
+				<div class="quantity">
+					<button class="minus">−</button>
+					<span class="count">1</span>
+					<button class="plus">+</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="product" data-id="2" data-price="222">
+			<img src="https://rst-basket-cdn-05.geobasket.ru/vol1755/part175593/175593439/images/big/1.webp" alt="Губозакаточная машинка">
+			<div class="product-info">
+				<p>Губозакаточная машинка — <b>222$</b></p>
+				<div class="quantity">
+					<button class="minus">−</button>
+					<span class="count">1</span>
+					<button class="plus">+</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="product" data-id="3" data-price="240">
+			<img src="https://rst-basket-cdn-10.geobasket.ru/vol10317/part1031703/1031703804/images/big/1.webp" alt="Робот-пылесос XIAOMI">
+			<div class="product-info">
+				<p>Робот-пылесос XIAOMI — <b>240$</b></p>
+				<div class="quantity">
+					<button class="minus">−</button>
+					<span class="count">1</span>
+					<button class="plus">+</button>
+				</div>
+			</div>
+		</article>
+
+		<section class="cart-total">
+			<h2>Итого</h2>
+			<p>Количество товаров: <strong id="total-count">3</strong></p>
+			<p>Итоговая сумма: <strong><span id="total-price">3452</span>$</strong></p>
+		</section>
+
+		<div class="buttons">
+			<button id="order">Оформить заказ</button>
+			<a href="index.html">Назад в каталог</a>
+		</div>
+	</main>
+
+	<hr>
+
+	<footer>
+		<p>1488 Маркет.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
