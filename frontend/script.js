@@ -20,18 +20,18 @@ function updateCart() {
 
 async function saveQuantity(productId, quantity) {
     const response = await fetch(
-        `http://localhost:8000/cart/${productId}?quantity=${quantity}`,
+        `https://restaurant-html-production.up.railway.app/cart/${productId}?quantity=${quantity}`,
         {
             method: "POST"
         }
     );
     if (!response.ok) {
-        console.log("ошибк");
+        console.log("ошибка");
     }
 }
 async function loadCart() {
     const response = await fetch(
-        "http://localhost:8000/cart"
+        "https://restaurant-html-production.up.railway.app/cart"
     );
     const cart = await response.json();
     products.forEach(product => {
