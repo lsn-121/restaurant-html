@@ -26,7 +26,7 @@ async function saveQuantity(productId, quantity) {
         }
     );
     if (!response.ok) {
-        console.log("ошибк");
+        console.log("ошибка");
     }
 }
 async function loadCart() {
