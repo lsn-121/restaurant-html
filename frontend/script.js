@@ -1,7 +1,7 @@
 const products = document.querySelectorAll(".product");
 const totalCount = document.getElementById("total-count");
 const totalPrice = document.getElementById("total-price");
-
+const API_URL = 'https://restaurant-html-production.up.railway.app'
 function updateCart() {
     let count = 0;
     let price = 0;
@@ -79,5 +79,8 @@ document.getElementById("order").addEventListener("click", event => {
     alert(
         `Заказ оформлен!\nТоваров: ${totalCount.textContent}\nСумма: ${totalPrice.textContent}$`
     );
+});
+document.addEventListener("DOMContentLoaded", () => {
+    loadCart();
 });
 
